@@ -137,7 +137,7 @@ Key Features:
 
 ## 📊 ETL App Instructions
 
-1. Visit the ETL app: `https://your-etl-app-url`
+1. Visit the ETL app: https://dattatechddwarabandam.shinyapps.io/NEMeasleswebETLalpha/
 2. Upload the Excel file(s) downloaded from CRF app
 3. Review cleaned data table
 4. Scroll to:
