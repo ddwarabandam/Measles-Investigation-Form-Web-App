@@ -28,7 +28,7 @@ Specifically
 - Collecting standardized measles case investigation data
 - Ensuring local and secure data handling
 - Analyzing epidemic trends, vaccination status, Rt estimation, and outbreak projections
-- Facilitating visual reporting via downloadable epidemic curves, Gantt charts, and dynamic scenario models
+- Facilitating visual reporting via downloadable epidemic curves, gantt charts, and Dynamic scenario models
 
 ---
 
