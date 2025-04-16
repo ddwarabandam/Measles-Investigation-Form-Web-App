@@ -138,7 +138,7 @@ Key Features:
 ## 📊 ETL App Instructions
 
 1. Visit the ETL app: https://dattatechddwarabandam.shinyapps.io/NEMeasleswebETLalpha/
-2. Upload the Excel file(s) downloaded from CRF app
+2. Upload the combined_cases.xlsx Excel file(s) appended after downloading the case files from CRF app
 3. Review cleaned data table
 4. Scroll to:
    - **Summary Frequency Tables**
@@ -162,7 +162,7 @@ If a case needs follow-up data entry (e.g., now confirmed or hospitalized), the 
 🟡 **Leave previously entered fields blank**  
 🟡 Download this updated `.xlsx` row
 
-> The ETL app will simply append the updated row. Review teams can later merge/edit in Excel using filters or `case_id` match.
+> The Auto R script or Excel Power Query will simply append the updated row to the combined cases xlsx file. Review teams can later merge/edit in Excel using filters or `case_id` match.
 
 ---
 
