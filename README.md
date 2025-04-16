@@ -146,8 +146,8 @@ Key Features:
    - **Interactive Epidemic Curves**
    - **Gantt Charts of Contagious Period**
    - **Rt Estimation Over Time**
-   - **14-Day Forecast (Fixed Rt = 1.2)**
-   - **Scenario Modeling (Rt = 1.2, 1.4, 1.6)**
+   - **14-Day Forecast (Fixed Rt = 1.3)**
+   - **Scenario Modeling (Rt = 1.3, 1.5, 1.6)**
    - **Custom Scenario Inputs**
 
 ---
