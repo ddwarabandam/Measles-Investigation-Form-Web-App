@@ -508,9 +508,9 @@ flowchart TD
   C --> D[Securely Store]
   D --> E[Combine Cases via R script or Excel]
   E --> F[Open ETL App]
-  G --> H[Upload combined_cases.xlsx File]
-  I --> J[Clean & Visualize]
-  K --> L[Summary, Epicurves, Rt, Gantt, Scenario Projections]
+  F --> G[Upload combined_cases.xlsx File]
+  G --> H[Clean & Visualize]
+  H --> I[Summary Tables, Epicurves, Rt, Gantt, Scenario Projections]
 ```
 
 ---
