@@ -210,9 +210,28 @@ ui <- fluidPage(
              h4("Preview Saved Cases This Session"),
              tableOutput("session_data")
     )
+  ),
+  tabPanel("About",
+           br(),
+           tags$h4("📘 About This Measles Toolkit App"),
+           tags$p("This web application is built for supporting measles case investigation, contact tracing, epidemic modeling, and scenario forecasting for public health staff and epidemiologists."),
+           
+           tags$hr(),
+           
+           tags$p(style = "font-size: 12px; color: gray;",
+                  HTML(paste0(
+                    "© 2025 ddwarabandam. All rights reserved. ",
+                    "Designed with reference to the CDC Measles Standardized Case Investigation Form (",
+                    "<a href='https://www.cdc.gov/measles/downloads/2024-dvd-measles-investigation-form.pdf' target='_blank'>source</a>). ",
+                    "For documentation, visit the ",
+                    "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha/blob/main/README.md' target='_blank'>README</a>, ",
+                    "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha' target='_blank'>ETL App</a>, ",
+                    "and <b>CRF App - Alpha v1.0</b>."
+                  ))
+           )
   )
-)
 
+)
 
 
 # CRF: server.R
