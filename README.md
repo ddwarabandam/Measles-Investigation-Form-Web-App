@@ -506,10 +506,11 @@ flowchart TD
   A[CRF App] --> B[Enter & Save Case]
   B --> C[Download Excel File]
   C --> D[Securely Store]
-  D --> E[Open ETL App]
-  E --> F[Upload .xlsx File]
-  F --> G[Clean & Visualize]
-  G --> H[Rt, Gantt, Projections]
+  D --> E[Combine Cases via R script or Excel]
+  E --> F[Open ETL App]
+  G --> H[Upload combined_cases.xlsx File]
+  I --> J[Clean & Visualize]
+  K --> L[Summary, Epicurves, Rt, Gantt, Scenario Projections]
 ```
 
 ---
