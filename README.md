@@ -606,7 +606,10 @@ flowchart TD
 
 - Written in **R + Shiny**  
 - Uses `{plotly}`, `{ggplot2}`, `{DT}`, `{EpiEstim}`, `{projections}`, `{incidence}`, see packages list above  
-- For custom deployment or local testing, see `appalpha.R` & `appbeta.R` scripts in githubrepo
+- For custom deployment or local testing, see `appalpha.R` & `appbeta.R` scripts in following github repos
+- Github repo CRF: https://github.com/ddwarabandam/NEMeasleswebCRFalpha.git
+- Github repo ETL: https://github.com/ddwarabandam/NEMeasleswebETLalpha.git
+- Future release version beta in May 2025. Your specific needs and requests feedback will be much appreciated
 
 ---
 
