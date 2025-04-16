@@ -10,6 +10,7 @@
 - **Random Data Generator Script Repo:** https://github.com/ddwarabandam/NEMeasleswebETLalpha.git
 - **Live CRF App** : https://dattatechddwarabandam.shinyapps.io/NEMeasleswebCRFalpha/  
 - **Live ETL App** : https://dattatechddwarabandam.shinyapps.io/NEMeasleswebETLalpha/
+- **CDC Measles CRF** : https://www.cdc.gov/measles/downloads/2024-dvd-measles-investigation-form.pdf
 
 
 ---
@@ -618,9 +619,11 @@ flowchart TD
 Conceptualized, Developed & Maintained by: **Dr. Devi Dwarabandam, MPH, a-IPC, BDS**, 
 
 Epidemiologist & R Developer, NACCHO Disease Forecasting & Outbreak Analytics Grant Recipient  
-📧 `devi.dwarabandam@shdhd.ne.gov`
+📧 `devi.dwarabandam@gmail.com`
 - Inspired by: WHO Outbreak Management Tools
-- Supported by: **Executive Director - Dr Michele Bever, South Heartland District Health Department**  
+- Special thanks to **Executive Director - Dr Michele Bever, South Heartland District Health Department**  
 - Built using open-source packages from the **R Epidemics Consortium (RECON)**
+  
+## ⚠️ This app is provided as-is for public health data management, analytics and decision support. The developer is not responsible for any issues arising from unauthorized modifications or derivative reproductions. Accountability for use, data handling, and deployment lies solely with the deploying user or team.
 
 --- 
