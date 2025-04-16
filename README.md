@@ -8,8 +8,8 @@
 - **CRF Repo URL:** https://github.com/ddwarabandam/NEMeasleswebCRFalpha 
 - **ETL App Repo URL:** https://github.com/ddwarabandam/NEMeasleswebETLalpha
 - **Random Data Generator Script Repo:** https://github.com/ddwarabandam/NEMeasleswebETLalpha.git
-- **Live CRF App** : https://dattatechddwarabandam.shinyapps.io/NEMeasleswebCRFalpha/  
-- **Live ETL App** : https://dattatechddwarabandam.shinyapps.io/NEMeasleswebETLalpha/
+- **Live CRF App** : https://dattatechddwarabandam.shinyapps.io/NEMeaslesCRFwebalpha/
+- **Live ETL App** : https://dattatechddwarabandam.shinyapps.io/NEMeaslesETLwebalpha/
 - **CDC Measles CRF** : https://www.cdc.gov/measles/downloads/2024-dvd-measles-investigation-form.pdf
 
 
@@ -63,7 +63,7 @@ This prevents app crashes during save even if fields are left blank.
 
 ## 📥 CRF App Instructions
 
-1. Visit the hosted CRF app: https://dattatechddwarabandam.shinyapps.io/NEMeasleswebCRFalpha/
+1. Visit the hosted CRF app: https://dattatechddwarabandam.shinyapps.io/NEMeaslesCRFwebalpha/
 2. Navigate through tabs:  
    - **Case Info**, **Demographics**, **Clinical**, **Exposure/Contact**, **Vaccination**, **Healthcare & Labs**, **Final Status**
 3. Enter data in all fields as per instructions. White space was intentional to allow other apps to open side by side this web app.
@@ -138,7 +138,7 @@ Key Features:
 
 ## 📊 ETL App Instructions
 
-1. Visit the ETL app: https://dattatechddwarabandam.shinyapps.io/NEMeasleswebETLalpha/
+1. Visit the ETL app: https://dattatechddwarabandam.shinyapps.io/NEMeaslesETLwebalpha/
 2. Upload the combined_cases.xlsx Excel file(s) appended after downloading the case files from CRF app
 3. Review cleaned data table
 4. Scroll to:
