@@ -467,7 +467,7 @@ Each scenario displays:
 
 - 95% Credible Interval (shaded)
 
-- projected over 14 days
+- projected over 14 days via 5000 simulation (sims) runs (sims can be adjusted as per computing needs)
 
 These projections help visualize worst-case, expected, and best-case spread under each scenario.
 
@@ -476,7 +476,7 @@ You can:
 
 - Download, pan, zoom, drag or do several other actions on the plot as per Plotly interactive commands permit
 
-- Use download png or jpeg plots with labels in briefings or meetings
+- Use downloaded png or jpeg plots with labels in briefings or meetings as deemed necessary
 
 - Simulate "what-if" interventions (e.g., Rt drops due to vaccination or masking)
 
