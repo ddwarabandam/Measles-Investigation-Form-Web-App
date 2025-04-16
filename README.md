@@ -2,8 +2,8 @@
 
 **Author:** Devi Dwarabandam
 --- 
-**Tools:** R Shiny App | Excel | Measles CRF | ETL & Modeling | Scenario Projections Dashboard  
-**Last Updated:** April 2025 
+**Tools:** |CDC Measles CRF |R Shiny App | Excel | Measles CRF | ETL & Modeling | Scenario Projections Dashboard  
+**Last Updated:** April 16, 2025: Current Phase: Testing (Alpha v1) | Progress: Research, Design, Development
 --- 
 - **CRF Repo URL:** https://github.com/ddwarabandam/NEMeasleswebCRFalpha 
 - **ETL App Repo URL:** https://github.com/ddwarabandam/NEMeasleswebETLalpha
