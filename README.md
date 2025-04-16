@@ -206,8 +206,6 @@ estimate_R(
 ```
 ## 📐 Serial Interval (SI) Settings for Measles
 
-Parameter	Value	Why?
-
 Parameter | Value | Why?
 --- | --- | ---
 Mean SI | 12 | Based on CDC & literature (Fine et al., Wallinga & Teunis)
