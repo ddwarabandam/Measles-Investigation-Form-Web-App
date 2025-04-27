@@ -46,7 +46,7 @@ ui <- fluidPage(
     "))
   ),
   
-  titlePanel("Measles Case Report Form (Investigation Form) Web App"),
+  titlePanel("Measles Investigation Form Web App AlphaV2.0"),
   tabsetPanel(
     type = "tabs",
     
@@ -227,8 +227,8 @@ ui <- fluidPage(
                     "<a href='https://www.cdc.gov/measles/downloads/2024-dvd-measles-investigation-form.pdf' target='_blank'>source</a>). ",
                     "For documentation, visit the ",
                     "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha/blob/main/README.md' target='_blank'>README</a>, ",
-                    "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha' target='_blank'>ETL App</a>, ",
-                    "and <b>CRF App - Alpha v2.0</b>."
+                    "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha' target='_blank'>ETL Measles Outbreak Analytics App</a>, ",
+                    "and <b> Measles Investigation Form App - Alpha v2.0</b>."
                   ))
            )
   )
