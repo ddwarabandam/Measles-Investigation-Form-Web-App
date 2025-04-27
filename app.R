@@ -1,4 +1,4 @@
-# CRF: global.R or top of app.R
+# CRF Investigation Form Web app: global.R or top of app.R
 library(shiny)
 library(openxlsx)
 library(dplyr)
@@ -46,7 +46,7 @@ ui <- fluidPage(
     "))
   ),
   
-  titlePanel("Measles Case Report Form Web App"),
+  titlePanel("Measles Case Report Form (Investigation Form) Web App"),
   tabsetPanel(
     type = "tabs",
     
@@ -119,18 +119,18 @@ ui <- fluidPage(
     ),
     
     # ----------------------- 4. Exposure/Contact -----------------------
-    tabPanel("Exposure Details/Contacts during Contagious Period",
+    tabPanel("Exposure/ Contagious Period Details",
              radioButtons("recent_travel", "Travel Outside US (21 days)?", c(" ", "Yes", "No", "Unknown")),
              dateInput("travel_depart_date", "Departure Date"),
              dateInput("travel_return_date", "Return Date"),
              textAreaInput("countries_visited", "Countries Visited", placeholder = "e.g., Australia, India, Italy"),
-             radioButtons("known_source_contact", "Contact w/ Contagious Case?", c(" ", "Yes", "No", "Unknown")),
+             radioButtons("exposure_source_contact", "Remember Any Close Contact with a Contagious Case during Exposure Period?(Source Case)", c(" ", "Yes", "No", "Unknown")),
              textInput("source_case_id", "Source Case ID if known", placeholder = "e.g., NE-2024-00098"),
-             textAreaInput("source_exposure_details", "Potential Source Exposure Details (5-21 days before First Symptom Onset Date)", placeholder = "e.g., -21D, 03/20/25, School(ABC), 8AM to 5PM, 100 people, private car; -20D, 03/21/25, Movie theater xyz, 2PM-5PM, 200 people, own car, Restaurant XYZ, 6PM-8PM, 50 people, own car;", height = "60px"),
-             radioButtons("community_exposed_contacts", "Exposed Community Contacts during Contagious Period?", c(" ", "Yes", "No", "Unknown")),
-             textAreaInput("community_contact_details", "Contagious Period Community Contacts Details (+/-4 days to Rash Onset Date)", placeholder = ".g., -4D, 04/02/25, Hospital(ABC), 1PM to 5PM, X people, private car; +1D, 04/07/25, Friends house xyz, 2PM-5PM, 5 people, own car;", height = "60px"),
+             textAreaInput("comments_source_case ", "Any Comments about Suspect Source - Measles Case to Whom this Case got Exposed?", placeholder = " My friend's daugther 2 years old seemed very sick with fever and rashes last month during a weekend barbeque event, Mar 23, 2025."),
+             textAreaInput("exposure_period_contact_details", "Exposure Period Travel History (Exposure period = 7-21 days Before Initial Symptoms Onset Date): Ask about Date of travel, Location, Duration of Time Spent, Est. No. of people around, Transporation used;", placeholder = "Note: Write info with Comma Separation & use semicolon ';' for each day ending; e.g., 21Day, 03/20/25, School(ABC), 8AM to 5PM, 100 people, private car; 20Day, 03/21/25, Movie theater xyz, 2PM-5PM, 200 people, own car, Restaurant XYZ, 6PM-8PM, 50 people, own car;", height = "60px"),
+             textAreaInput("contagious_period_contact_details", "Contagious Period Travel History (Contagious period = 4 days Before Rash Onset Date to 4 days after): Ask about Date of travel, Location, Duration of Time Spent, Est. No. of people around, Transporation used;", placeholder = "Note: Write info with Comma Separation  & use semicolon ';' for each day ending, - & + to denote before & after period to Rash Onset Date; e.g., -4Day, 04/02/25, Hospital(ABC), 1PM to 5PM, X people, private car; +1Day, 04/07/25, Friends house xyz, 2PM-5PM, 5 people, own car;", height = "60px"),
              textAreaInput("household_contacts_details", "Household Contacts Details",placeholder = "e.g., Father, Mother, 2025-03-23 to 2025-04-01", height = "100px"),
-             textAreaInput("additional_contact_comments","Additional Exposed or Contact Comments", placeholder = "e.g., Potentially exposed neighbors and a visiting friend on March 27, 2025 at home")
+             textAreaInput("additional_contact_comments","Exposure or Contagious Period Additional Comments", placeholder = "e.g., Potentially exposed neighbors and a visiting friend on March 27, 2025 at home")
     ),
     
     # ----------------------- 5. Vaccination -----------------------
@@ -213,8 +213,10 @@ ui <- fluidPage(
   ),
   tabPanel("About",
            br(),
-           tags$h4("📘 About This Measles Toolkit App"),
-           tags$p("This web application is built for supporting measles case investigation, contact tracing, epidemic modeling, and scenario forecasting for public health staff and epidemiologists."),
+           tags$h4("📘 About This Measles Investigation Form Web  App (Alphav3.1)"),
+           tags$p("This web application is designed to support fast and accurate measles case investigations and contact tracing.
+            It streamlines case data entry, organizes key information, and prepares datasets for automated analysis through the ETL and outbreak analytics companion app.
+            Together, these tools help public health teams summarize cases, model epidemic growth, forecast outbreaks, and guide timely decision-making."),
            
            tags$hr(),
            
@@ -226,7 +228,7 @@ ui <- fluidPage(
                     "For documentation, visit the ",
                     "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha/blob/main/README.md' target='_blank'>README</a>, ",
                     "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha' target='_blank'>ETL App</a>, ",
-                    "and <b>CRF App - Alpha v1.0</b>."
+                    "and <b>CRF App - Alpha v3.1</b>."
                   ))
            )
   )
@@ -321,11 +323,11 @@ server <- function(input, output, session) {
       travel_depart_date = safe_value(input$travel_depart_date),
       travel_return_date = safe_value(input$travel_return_date),
       countries_visited = safe_value(input$countries_visited),
-      known_source_contact = safe_value(input$known_source_contact),
+      exposure_source_contact = safe_value(input$exposure_source_contact),
       source_case_id = safe_value(input$source_case_id),
-      source_exposure_details = safe_value(input$source_exposure_details),
-      community_exposed_contacts = safe_value(input$community_exposed_contacts),
-      community_contact_details = safe_value(input$community_contact_details),
+      comments_source_case = safe_value(input$comments_source_case),
+      exposure_period_contact_details = safe_value(input$exposure_period_contact_details),
+      contagious_period_contact_details = safe_value(input$contagious_period_contact_details),
       household_contacts_details = safe_value(input$household_contacts_details),
       additional_contact_comments = safe_value(input$additional_contact_comments),
       
