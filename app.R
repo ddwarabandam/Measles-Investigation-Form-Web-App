@@ -124,7 +124,7 @@ ui <- fluidPage(
              dateInput("travel_depart_date", "Departure Date"),
              dateInput("travel_return_date", "Return Date"),
              textAreaInput("countries_visited", "Countries Visited", placeholder = "e.g., Australia, India, Italy"),
-             radioButtons("exposure_source_contact", "Remember Any Close Contact with a Contagious Case during Exposure Period?(Source Case)", c(" ", "Yes", "No", "Unknown")),
+             radioButtons("exposure_source_contact", "Do you remember any Close Contact with a Contagious Case during your Exposure Period?", c(" ", "Yes", "No", "Unknown")),
              textInput("source_case_id", "Source Case ID if known", placeholder = "e.g., NE-2024-00098"),
              textAreaInput("comments_source_case ", "Any Comments regarding the Potential Source of Exposure for this Measles Case?", placeholder = " My friend's daugther 2 years old seemed very sick with fever and rashes last month during a weekend barbeque event, Mar 23, 2025."),
              textAreaInput("exposure_period_contact_details", "Exposure Period Travel History (Exposure period = 7-21 days Before Initial Symptoms Onset Date): Ask about Date of travel, Location, Duration of Time Spent, Est. No. of people around, Transporation used;", placeholder = "Note: Write info with Comma Separation & use semicolon ';' for each day ending; e.g., 21Day, 03/20/25, School(ABC), 8AM to 5PM, 100 people, private car; 20Day, 03/21/25, Movie theater xyz, 2PM-5PM, 200 people, own car, Restaurant XYZ, 6PM-8PM, 50 people, own car;", height = "60px"),
