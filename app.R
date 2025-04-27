@@ -1,4 +1,4 @@
-# CRF Investigation Form Web app: global.R or top of app.R
+# CRF Measles Investigation Form v2.0: global.R or top of app.R
 library(shiny)
 library(openxlsx)
 library(dplyr)
@@ -55,7 +55,7 @@ ui <- fluidPage(
              textInput("case_id", "Case ID", placeholder = "e.g., NE-2024-00123"),
              textInput("state_case_id", "State Case ID", placeholder = "e.g., 24ME123456"),
              textInput("lab_id", "Lab ID", placeholder = "e.g., LAB456789"),
-             textInput("nndss_id", "NNDSS ID", placeholder = "e.g., 1234567890"),
+             textInput("nndss_id", "NEDSS ID", placeholder = "e.g., 1234567890"),
              textInput("patient_name", "Patient Name", placeholder = "e.g., Smith, John"),
              dateInput("report_date", "Reported to Health Department"),
              dateInput("invest_start_date", "Investigation Start Date"),
