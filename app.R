@@ -1,4 +1,4 @@
-# CRF Measles Investigation Form v2.0: global.R or top of app.R
+# CRF Measles Investigation Form Web App v2.0: global.R or top of app.R
 library(shiny)
 library(openxlsx)
 library(dplyr)
@@ -213,7 +213,7 @@ ui <- fluidPage(
   ),
   tabPanel("About",
            br(),
-           tags$h4("📘 About This Measles Investigation Form Web  App (Alphav3.1)"),
+           tags$h4("📘 About This Measles Investigation Form Web  App (Alphav2.0)"),
            tags$p("This web application is designed to support fast and accurate measles case investigations and contact tracing.
             It streamlines case data entry, organizes key information, and prepares datasets for automated analysis through the ETL and outbreak analytics companion app.
             Together, these tools help public health teams summarize cases, model epidemic growth, forecast outbreaks, and guide timely decision-making."),
@@ -228,7 +228,7 @@ ui <- fluidPage(
                     "For documentation, visit the ",
                     "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha/blob/main/README.md' target='_blank'>README</a>, ",
                     "<a href='https://github.com/ddwarabandam/NEMeasleswebETLalpha' target='_blank'>ETL App</a>, ",
-                    "and <b>CRF App - Alpha v3.1</b>."
+                    "and <b>CRF App - Alpha v2.0</b>."
                   ))
            )
   )
