@@ -10,7 +10,7 @@
 - **Investigation Form Web App Repo URL:** https://github.com/ddwarabandam/Measles-Investigation-Form-Web-App.git
 - **ETL Outbreak Analytics Web App Repo URL:** https://github.com/ddwarabandam/Measles-ETL-Outbreak-Analytics-Web-App.git
 - **Random Data Generator Script Repo:** https://github.com/ddwarabandam/NEMeasleswebETLalpha.git
-- **Live CRF App** : https://dattatechddwarabandam.shinyapps.io/NEMeaslesCRFwebalpha/
+- **Live Measles Investigation Form Web App** : https://dattatechddwarabandam.shinyapps.io/Measles-Investigation-Form-WebV2/
 - **Live ETL App** : https://dattatechddwarabandam.shinyapps.io/NEMeaslesETLwebalpha/
 - **CDC Measles CRF** : https://www.cdc.gov/measles/downloads/2024-dvd-measles-investigation-form.pdf
 
