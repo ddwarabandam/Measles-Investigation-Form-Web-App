@@ -1,4 +1,4 @@
-# 📘 Measles Outbreak Management & Analytics Toolkit (New Release Alpha v2.0 & v3.1)
+# 📘 Measles Outbreak Management & Analytics Web Apps Toolkit (New Release Alpha v2.0 & v3.1)
 
 **Author:** Devi Dwarabandam
 --- 
